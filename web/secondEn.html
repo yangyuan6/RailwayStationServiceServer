@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+
+        #wrapper {
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index: 200;
+            width: 100%;
+            hight: 100%;
+
+        }
+
+        ol, ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*兼容firefox的div高度100%*/
+        #left {
+            position: absolute;
+            top: 400px;
+            left: 200px;
+            width: 300px;
+            height: 200px;
+            background-color: #a4ffc1;
+            border-radius: 11px;
+            box-shadow:0px 0px 12px #72ff8d;
+
+
+            /*background-color: #CCCCCC;*/
+        }
+
+        #center {
+            box-shadow:0px 0px 12px #04ffd2;
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            left: 50%;
+            top: 400px;
+            margin-left: -150px;
+            background-color: #02e9e3;
+            border-radius: 11px;
+            /*background-color: #65fff7;*/
+        }
+
+        #right {
+            /*box-shadow:0 0 10px #f00;*/
+            /*box-shadow:0px 0px 12px #67ff9f;*/
+            box-shadow:0px 0px 12px #a1ff54;
+            float: right;
+            width: 300px;
+            position:absolute;
+            top: 400px;
+            right: 200px;
+            height: 200px;
+            background-color: #abe890;
+            border-radius: 11px;
+            /*border: 1px solid #77d690;*/
+        }
+        .box_frame {
+            cursor: pointer;
+            /*  background-color: #f8a521;*/
+
+            border-radius: 11px;
+            padding: 0px;
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            height: 200px;
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            color: #000;
+            display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */
+            line-height: 200px; /* 行高 */
+            word-wrap: break-word;
+            text-decoration: none; /* 不显示超链接下划线 */
+        }
+
+
+
+        #input {
+            color: #fff;
+            border: 0px;
+            outline: none;
+        }
+        #return {
+            z-index: 300;
+            position: fixed;
+            width: 150px;
+            height: 40px;
+            border-radius: 25px;
+            bottom: 80px;
+            right: 80px;
+            background-color: #c9f3c6;
+            box-shadow: 0px 0px 12px #73ff6f;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+            color: #000000;
+
+        }
+        #return a{
+            display: block;
+            text-decoration: none;
+            width:150px;
+            height: 36px;
+        }
+        html{
+            margin:0;
+            padding:0;
+            height:100%;
+            width:100%;
+        }
+        body{
+            height:100%;
+            width:100%;
+            background: url("static/images/bg.gif") no-repeat;
+            background-size: 100% 100%;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="left"><a class="box_frame" href="saoyisaoEn.html">scan ticket</a>
+    </div>
+    <div id="center"><a href="questionQueryEn.php" class="box_frame">Q & A</a>
+    </div>
+    <div id="right"><a href="trainInfoQueryEn.html" class="box_frame">Inquire</a>
+    </div>
+</div>
+<div id="return" ><a href="index.html">back</a></div>
+
+</body>
+<script>
+
+
+
+</script>
+</html>

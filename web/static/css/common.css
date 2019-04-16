@@ -1,0 +1,71 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+@font-face {
+	font-family:AoyunWhite;
+	src: url('../font/MQG8F02.ttf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+.mongolview{
+	max-height:512px;
+	max-width:800px;
+	font-family: AoyunWhite,serif;
+	writing-mode:vertical-lr;
+	-webkit-writing-mode:vertical-lr;
+	-moz-writing-mode: vertical-lr;
+	-o-writing-mode: vertical-lr;
+	-ms-writing-mode: tb-lr;
+	/*text-orientation: sideways-right;*/
+	-webkit-text-orientation: sideways-right;
+	text-justify: inter-ideograph;
+	text-align:justify;
+}
+@font-face {
+	font-family: 'OyunQaganTig';
+	src: url('../font/OyunQaganTig.eot'); /* IE9 Compat Modes */
+	src: url('../font/OyunQaganTig.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/OyunQaganTig.woff') format('woff'), /* Modern Browsers */
+	url('../font/OyunQaganTig.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../font/OyunQaganTig.svg#OyunQaganTig') format('svg'); /* Legacy iOS */
+}
+
+.oldMongolContent{
+	overflow:auto;
+	display: inline-block;
+	-moz-writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
+	-webkit-writing-mode: vertical-lr;
+	-o-writing-mode: vertical-lr;
+	-ms-writing-mode: tb-lr;
+	writing-mode: tb-lr;
+	-webkit-text-orientation:sideways-right;
+	FONT-SIZE: 22px;
+	FONT-FAMILY: OyunQaganTig;
+	color:#000000;
+}

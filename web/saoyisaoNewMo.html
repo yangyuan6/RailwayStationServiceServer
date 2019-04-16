@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+    <style>
+        html{
+            margin:0;
+            padding:0;
+            height:100%;
+            width:100%;
+        }
+        body{
+            height:100%;
+            width:100%;
+            background: url("static/images/bg.gif") no-repeat;
+            background-size: 100% 100%;
+
+        }
+        #input {
+            color: #fff;
+            /*border: 0px;*/
+            outline: none;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+        }
+
+        #input:hover {
+            color: #fff;
+            outline: none;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+        }
+
+        input {
+            border: 0px;
+        }
+
+        #return {
+            z-index: 300;
+            position: fixed;
+            width: 150px;
+            height: 40px;
+            border-radius: 25px;
+            bottom: 80px;
+            right: 80px;
+            background-color: #c9f3c6;
+            box-shadow: 0px 0px 12px #73ff6f;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+            color: #000000;
+
+        }
+        #return a{
+            display: block;
+            text-decoration: none;
+            width:150px;
+            height: 36px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="static/css/saoyisaostyle.css">
+</head>
+<body style="font-family: Calibri">
+<div class="box">
+    <div id="finger">
+        <div id="finger_box">
+            <img id="zhiwen" src="static/images/erweima.png" alt=""/>
+            <img id="line" src="static/images/line.png" alt=""/>
+            <p id="info"></p>
+        </div>
+    </div>
+</div>
+
+<input id="input" readonlyunselectable="on"><input>
+<div id="return" ><a  href="secondNewMo.html" >Буцах</a></div>
+<script src="static/js/jquery.js"></script>
+<script>
+    var input = document.getElementById("input");
+    input.focus();
+    var ref = setInterval(function () {
+        input.focus();
+        var text = input.value;
+        if (text.length >= 144) {
+            console.log(text.substring(0, 144))
+            input.value = "";
+            window.clearInterval(ref);
+            SubmitForm(text);
+        }
+    }, 100);
+
+    var $info = $('#info'), $zhiwen = $('#zhiwen'), $line = $('#line');
+    var timer = setInterval(function () {
+        $line.stop().show();
+        setTimeout(function () {
+            $line.hide();
+        }, 1400)
+    }, 1800);
+    function SubmitForm(code) {
+        var sfForm = document.createElement("form");
+        document.body.appendChild(sfForm);
+        var tmpInput = document.createElement("input");
+        tmpInput.type = "hidden";
+        tmpInput.name = "code";
+        tmpInput.value = code;
+        sfForm.appendChild(tmpInput);
+        sfForm.method = "post";
+        sfForm.action = "ticketqueryreNewMo.php";
+        sfForm.submit();
+    }
+
+
+</script>
+</body>
+</html>

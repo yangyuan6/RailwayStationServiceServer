@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/css/common.css">
+</head>
+<body>
+<style>
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: url("static/images/bg1.gif") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #wrapper {
+        z-index: 200;
+        width: 100%;
+        hight: 100%;
+    }
+
+    ol, ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /*兼容firefox的div高度100%*/
+    #left {
+        position: absolute;
+        top: 400px;
+        left: 125px;
+        width: 250px;
+        height: 250px;
+        background-color: #47ff5e;
+        border-radius: 130px;
+        box-shadow: 0px 0px 12px #47ff5e;
+
+    }
+
+    #left1 {
+        box-shadow: 0px 0px 12px #47ff5e;
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        left: 39%;
+        top: 325px;
+        margin-left: -100px;
+        background-color: #47ff5e;
+        border-radius: 130px;
+    }
+
+    #right1 {
+        box-shadow: 0px 0px 12px #47ff5e;
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        left: 63%;
+        top: 280px;
+        margin-left: -100px;
+        background-color: #47ff5e;
+        border-radius: 130px;
+        /*background-color: #65fff7;*/
+    }
+
+    #right {
+        /*box-shadow:0 0 10px #f00;*/
+        /*box-shadow:0px 0px 12px #67ff9f;*/
+        box-shadow: 0px 0px 12px #47ff5e;
+        float: right;
+        position: absolute;
+        top: 252px;
+        right: 60px;
+        width: 250px;
+        height: 250px;
+        background-color: #47ff5e;
+        border-radius: 130px;
+        /*border: 1px solid #77d690;*/
+    }
+
+    .box_frame {
+        cursor: pointer;
+        /*  background-color: #f8a521;*/
+
+        border-radius: 11px;
+        padding: 0px;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        font-size: 2em;
+        color: #000;
+        display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */
+        line-height: 250px; /* 行高 */
+        word-wrap: break-word;
+        text-decoration: none; /* 不显示超链接下划线 */
+    }
+
+    #input {
+        color: #fff;
+        border: 0px;
+        outline: none;
+    }
+
+
+    .rightad {
+        z-index: 1000;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        width:150px;
+        height:150px;
+    }
+    #ad{
+        width:150px;
+        height:150px;
+    }
+    .mo{
+        overflow:auto;
+        display: inline-block;
+        -moz-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+        -o-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: tb-lr;
+        -webkit-text-orientation:sideways-right;
+        FONT-SIZE: 40px;
+        FONT-FAMILY: OyunQaganTig;
+        color:#000000;
+    }
+
+</style>
+
+<div id="wrapper">
+    <div id="left"><a class="box_frame mo" href="secondMo.html">ᠮᠣᠩᠭᠣᠯ</a>
+    </div>
+    <div id="left1"><a href="second.html" class="box_frame">中文</a>
+    </div>
+    <div id="right1"><a class="box_frame" href="secondEn.html">English</a>
+    </div>
+    <div id="right"><a class="box_frame" href="secondNewMo.html">Монгол</a>
+    </div>
+
+</div>
+<div class="rightad"><img id="ad" src="static/images/mytest.jpg" alt=""/></div>
+</body>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script>
+    $(function () {
+        var scrollTop = $(document).scrollTop();
+        setInterval(function () {
+            $(".rightad").stop().animate({"top": scrollTop + 50}, 3000);
+            setTimeout(function () {
+                $(".rightad").stop().animate({"top": scrollTop + 100}, 3000);
+            }, 3500);
+        }, 8000)
+    });
+    console.log("plgy_y")
+</script>
+</html>
