@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/License-Apache%202-yellow.svg)
 # 草原驿站 智出行 中蒙英语音AI服务平台
-
+## [网站地址](http://202.207.12.186/RailwayStationServer)
 
 **本系统基于Apache2.0协议开源，请严格遵守开源协议。**
 
